@@ -1,0 +1,899 @@
+{
+	"info": {
+		"_postman_id": "b11f85d5-03ad-4be5-accd-7fec0da488e6",
+		"name": "ProjectManagementAPi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterForNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Ahmed123\",\r\n  \"email\": \"Ahmedsss@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"firstName\": \"Ahmedtest\",\r\n  \"lastName\": \"Saad\",\r\n  \"role\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "RegisterForExample",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Ahmed123\",\r\n  \"email\": \"Ahmedsss@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"firstName\": \"Ahmedtest\",\r\n  \"lastName\": \"Saad\",\r\n  \"role\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Auth/register",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:20:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User registered successfully\",\n    \"data\": \"Registration completed\",\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Ahmed123\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Ahmed123\",\r\n  \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Auth/login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:24:11 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8\",\n        \"username\": \"Ahmed123\",\n        \"email\": \"Ahmedsss@gmail.com\",\n        \"role\": \"Admin\",\n        \"expiresAt\": \"2025-09-06T22:24:11.3107405Z\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Project 3 \",\r\n  \"description\": \"Projects Test 3 \",\r\n  \"startDate\": \"2025-09-05T22:25:35.384Z\",\r\n  \"endDate\": \"2025-09-08T22:25:35.384Z\",\r\n  \"budget\": 5003,\r\n  \"managerId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Projects",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Project 3 \",\r\n  \"description\": \"Projects Test 3 \",\r\n  \"startDate\": \"2025-09-05T22:25:35.384Z\",\r\n  \"endDate\": \"2025-09-08T22:25:35.384Z\",\r\n  \"budget\": 5003,\r\n  \"managerId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Projects",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Projects"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:44312/api/Projects/3"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:28:42 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Project created successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"Project 3 \",\n        \"description\": \"Projects Test 3 \",\n        \"startDate\": \"2025-09-05T22:25:35.384Z\",\n        \"endDate\": \"2025-09-08T22:25:35.384Z\",\n        \"status\": 1,\n        \"statusName\": \"Planning\",\n        \"budget\": 5003,\n        \"managerId\": 2,\n        \"managerName\": null,\n        \"tasksCount\": 0,\n        \"createdAt\": \"2025-09-05T22:28:42.7896452Z\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Projects",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/api/Projects",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Projects",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44312/api/Projects",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Projects"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:29:58 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Projects retrieved successfully\",\n    \"data\": {\n        \"items\": [\n            {\n                \"id\": 3,\n                \"name\": \"Project 3 \",\n                \"description\": \"Projects Test 3 \",\n                \"startDate\": \"2025-09-05T22:25:35.384\",\n                \"endDate\": \"2025-09-08T22:25:35.384\",\n                \"status\": 1,\n                \"statusName\": \"Planning\",\n                \"budget\": 5003,\n                \"managerId\": 2,\n                \"managerName\": \"Ahmedtest Saad\",\n                \"tasksCount\": 0,\n                \"createdAt\": \"2025-09-05T22:28:42.7896452\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Project 2 \",\n                \"description\": \"Projects Test 2 \",\n                \"startDate\": \"2025-09-05T22:25:35.384\",\n                \"endDate\": \"2025-09-08T22:25:35.384\",\n                \"status\": 1,\n                \"statusName\": \"Planning\",\n                \"budget\": 500,\n                \"managerId\": 2,\n                \"managerName\": \"Ahmedtest Saad\",\n                \"tasksCount\": 0,\n                \"createdAt\": \"2025-09-05T22:27:04.826666\"\n            },\n            {\n                \"id\": 1,\n                \"name\": \"My Project\",\n                \"description\": \"Project Description\",\n                \"startDate\": \"2024-09-05T00:00:00\",\n                \"endDate\": \"2024-09-30T00:00:00\",\n                \"status\": 1,\n                \"statusName\": \"Planning\",\n                \"budget\": 10000,\n                \"managerId\": 1,\n                \"managerName\": \"Ahmed Saad\",\n                \"tasksCount\": 0,\n                \"createdAt\": \"2025-09-04T17:38:16.8738473\"\n            }\n        ],\n        \"totalCount\": 3,\n        \"pageNumber\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 1,\n        \"hasNextPage\": false,\n        \"hasPreviousPage\": false\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "GetProjectById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44312/api/Projects/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Projects",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetProjectById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:44312/api/Projects/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Projects",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:31:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Project retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"My Project\",\n        \"description\": \"Project Description\",\n        \"startDate\": \"2024-09-05T00:00:00\",\n        \"endDate\": \"2024-09-30T00:00:00\",\n        \"status\": 1,\n        \"statusName\": \"Planning\",\n        \"budget\": 10000,\n        \"managerId\": 1,\n        \"managerName\": \"Ahmed Saad\",\n        \"tasksCount\": 0,\n        \"createdAt\": \"2025-09-04T17:38:16.8738473\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"TestAfterUpdate\",\r\n  \"description\": \"TestAfterUpdate111\",\r\n  \"startDate\": \"2025-09-05T22:31:59.927Z\",\r\n  \"endDate\": \"2025-09-25T22:31:59.927Z\",\r\n  \"budget\": 400\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Projects/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Projects",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Project",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"TestAfterUpdate\",\r\n  \"description\": \"TestAfterUpdate111\",\r\n  \"startDate\": \"2025-09-05T22:31:59.927Z\",\r\n  \"endDate\": \"2025-09-25T22:31:59.927Z\",\r\n  \"budget\": 400\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Projects/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Projects",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:33:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Project updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"TestAfterUpdate\",\n        \"description\": \"TestAfterUpdate111\",\n        \"startDate\": \"2025-09-05T22:31:59.927Z\",\n        \"endDate\": \"2025-09-25T22:31:59.927Z\",\n        \"status\": 0,\n        \"statusName\": \"0\",\n        \"budget\": 400,\n        \"managerId\": 1,\n        \"managerName\": \"Ahmed Saad\",\n        \"tasksCount\": 0,\n        \"createdAt\": \"2025-09-04T17:38:16.8738473\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/api/Projects/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Projects",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Project",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44312/api/Projects/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Projects",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:34:19 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Project deleted successfully\",\n    \"data\": true,\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Add  New Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"projectId\": 2,\r\n  \"title\": \"Task 11\",\r\n  \"description\": \"Test Task 1\",\r\n  \"assignedToId\": 1,\r\n  \"priority\": 1,\r\n  \"dueDate\": \"2025-09-05T22:34:55.638Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add  New Task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"projectId\": 2,\r\n  \"title\": \"Task 11\",\r\n  \"description\": \"Test Task 1\",\r\n  \"assignedToId\": 1,\r\n  \"priority\": 1,\r\n  \"dueDate\": \"2025-09-05T22:34:55.638Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Tasks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:44312/api/Tasks"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:36:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Task created successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"projectId\": 2,\n        \"projectName\": \"Project 2 \",\n        \"title\": \"Task 11\",\n        \"description\": \"Test Task 1\",\n        \"assignedToId\": 1,\n        \"assignedToName\": \"Ahmed Saad\",\n        \"priority\": 1,\n        \"priorityName\": \"Low\",\n        \"dueDate\": \"2025-09-05T22:34:55.638Z\",\n        \"status\": 1,\n        \"statusName\": \"ToDo\",\n        \"createdAt\": \"2025-09-05T22:36:14.7022137Z\"\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44312/api/Tasks",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Task",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44312/api/Tasks",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:37:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Tasks retrieved successfully\",\n    \"data\": {\n        \"items\": [\n            {\n                \"id\": 1,\n                \"projectId\": 2,\n                \"projectName\": \"Project 2 \",\n                \"title\": \"Task 11\",\n                \"description\": \"Test Task 1\",\n                \"assignedToId\": 1,\n                \"assignedToName\": \"Ahmed Saad\",\n                \"priority\": 1,\n                \"priorityName\": \"Low\",\n                \"dueDate\": \"2025-09-05T22:34:55.638\",\n                \"status\": 1,\n                \"statusName\": \"ToDo\",\n                \"createdAt\": \"2025-09-05T22:36:14.7022137\"\n            }\n        ],\n        \"totalCount\": 1,\n        \"pageNumber\": 1,\n        \"pageSize\": 10,\n        \"totalPages\": 1,\n        \"hasNextPage\": false,\n        \"hasPreviousPage\": false\n    },\n    \"errors\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateStatusForTasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiQWhtZWQxMjMiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJBaG1lZHNzc0BnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIkZpcnN0TmFtZSI6IkFobWVkdGVzdCIsIkxhc3ROYW1lIjoiU2FhZCIsImV4cCI6MTc1NzE5NzQ1MSwiaXNzIjoiUHJvamVjdE1hbmFnZW1lbnRBUEkiLCJhdWQiOiJQcm9qZWN0TWFuYWdlbWVudENsaWVudCJ9.9jQWNiXBKsRUcPNL4AmPaQ2QkJxBPbG8OQfCx3CoDI8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"taskIds\": [\r\n    1\r\n  ],\r\n  \"status\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44312/api/Tasks/bulk-status",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44312",
+					"path": [
+						"api",
+						"Tasks",
+						"bulk-status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateStatusForTasks",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskIds\": [\r\n    1\r\n  ],\r\n  \"status\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44312/api/Tasks/bulk-status",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44312",
+							"path": [
+								"api",
+								"Tasks",
+								"bulk-status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Sep 2025 22:38:46 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Tasks status updated successfully\",\n    \"data\": true,\n    \"errors\": []\n}"
+				}
+			]
+		}
+	]
+}
