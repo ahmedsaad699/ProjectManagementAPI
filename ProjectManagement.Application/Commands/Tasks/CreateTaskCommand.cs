@@ -1,0 +1,14 @@
+﻿using MediatR;
+using ProjectManagement.Shared.DTOs;
+
+namespace ProjectManagement.Application.Commands.Tasks;
+
+public class CreateTaskCommand : IRequest<ApiResponse<TaskDto>>
+{
+    public int ProjectId { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public int? AssignedToId { get; set; }
+    public int Priority { get; set; }
+    public DateTime DueDate { get; set; }
+}

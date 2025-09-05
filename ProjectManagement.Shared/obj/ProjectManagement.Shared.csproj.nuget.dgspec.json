@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ProjectManagementAPI\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj": {}
+  },
+  "projects": {
+    "D:\\ProjectManagementAPI\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ProjectManagementAPI\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj",
+        "projectName": "ProjectManagement.Shared",
+        "projectPath": "D:\\ProjectManagementAPI\\ProjectManagement.Shared\\ProjectManagement.Shared.csproj",
+        "packagesPath": "C:\\Users\\ELKHOLI\\.nuget\\packages\\",
+        "outputPath": "D:\\ProjectManagementAPI\\ProjectManagement.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ELKHOLI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400-preview.23330.10\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

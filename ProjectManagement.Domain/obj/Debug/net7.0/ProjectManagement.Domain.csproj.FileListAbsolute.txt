@@ -1,0 +1,12 @@
+D:\ProjectManagementAPI\ProjectManagement.Domain\bin\Debug\net7.0\ProjectManagement.Domain.deps.json
+D:\ProjectManagementAPI\ProjectManagement.Domain\bin\Debug\net7.0\ProjectManagement.Domain.dll
+D:\ProjectManagementAPI\ProjectManagement.Domain\bin\Debug\net7.0\ProjectManagement.Domain.pdb
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.csproj.AssemblyReference.cache
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.AssemblyInfoInputs.cache
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.AssemblyInfo.cs
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.csproj.CoreCompileInputs.cache
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.dll
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\refint\ProjectManagement.Domain.dll
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ProjectManagement.Domain.pdb
+D:\ProjectManagementAPI\ProjectManagement.Domain\obj\Debug\net7.0\ref\ProjectManagement.Domain.dll
